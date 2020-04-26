@@ -1,14 +1,14 @@
 ## Class Features
-[x]Secure Encryption
-[x]Easy To Use
-[x]Cannot Be Cracked
-[x]Secure From SQLInjection Hacking Technique
-[x]Secure From Header-Injection Hacking Technique
-[x]Alert For Sucspicious Inputs
-[x]Irreversible Hashes
-[x]No Clash Between Hashes Of Two Different Passwords
-[x]No Compromise Of User Details
-[x]Hackers Can't Get The The Details Even After Getting Access To Your Server
+- [x]Secure Encryption
+- [x]Easy To Use
+- [x]Cannot Be Cracked
+- [x]Secure From SQLInjection Hacking Technique
+- [x]Secure From Header-Injection Hacking Technique
+- [x]Alert For Sucspicious Inputs
+- [x]Irreversible Hashes
+- [x]No Clash Between Hashes Of Two Different Passwords
+- [x]No Compromise Of User Details
+- [x]Hackers Can't Get The The Details Even After Getting Access To Your Server
 
 
 ## Why you might need it
