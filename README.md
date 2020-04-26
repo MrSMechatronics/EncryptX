@@ -1,27 +1,58 @@
 ## Class Features
-- Probably the world's most popular code for sending email from PHP!
-- Used by many open-source projects: WordPress, Drupal, 1CRM, SugarCRM, Yii, Joomla! and many more
-- Integrated SMTP support - send without a local mail server
-- Send emails with multiple To, CC, BCC and Reply-to addresses
-- Multipart/alternative emails for mail clients that do not read HTML email
-- Add attachments, including inline
-- Support for UTF-8 content and 8bit, base64, binary, and quoted-printable encodings
-- SMTP authentication with LOGIN, PLAIN, CRAM-MD5, and XOAUTH2 mechanisms over SSL and SMTP+STARTTLS transports
-- Validates email addresses automatically
-- Protect against header injection attacks
-- Error messages in over 50 languages!
-- DKIM and S/MIME signing support
-- Compatible with PHP 5.5 and later
-- Namespaced to prevent name clashes
-- Much more!
+[x]Secure Encryption
+[x]Easy To Use
+[x]Cannot Be Cracked
+[x]Secure From SQLInjection Hacking Technique
+[x]Secure From Header-Injection Hacking Technique
+[x]Alert For Sucspicious Inputs
+[x]Irreversible Hashes
+[x]No Clash Between Hashes Of Two Different Passwords
+[x]No Compromise Of User Details
+[x]Hackers Can't Get The The Details Even After Getting Access To Your Server
+
 
 ## Why you might need it
-Many PHP developers need to send email from their code. The only PHP function that supports this is [`mail()`](https://www.php.net/manual/en/function.mail.php). However, it does not provide any assistance for making use of popular features such as encryption, authentication, HTML messages, and attachments.
+Many Web And Php Developers Need To Create Accounts For Their Users And Thus Need To Store Some Incompromisable Details Of The Users. 
+However In Todays Cyber Era No 
+Place In The World Is Secure Where To Survive We Need To Secure Ourselves And Our Users. But Where Our Users Can Be Potential Attackers
+We Need Something To Secure Ourselves From Them. Most User-Based Attacks Are In The From Of SQLInjection Or Header-Injection Attacks So 
+We Need Filter Out The Information They Give Us At Every Step.
 
-Formatting email correctly is surprisingly difficult. There are myriad overlapping RFCs, requiring tight adherence to horribly complicated formatting and encoding rules – the vast majority of code that you'll find online that uses the `mail()` function directly is just plain wrong!
-*Please* don't be tempted to do it yourself – if you don't use PHPMailer, there are many other excellent libraries that you should look at before rolling your own. Try [SwiftMailer](https://swiftmailer.symfony.com/), [Zend/Mail](https://zendframework.github.io/zend-mail/), [ZetaComponents](https://github.com/zetacomponents/Mail) etc.
 
-The PHP `mail()` function usually sends via a local mail server, typically fronted by a `sendmail` binary on Linux, BSD, and macOS platforms, however, Windows usually doesn't include a local mail server; PHPMailer's integrated SMTP implementation allows email sending on Windows platforms without a local mail server.
+## How To Use EncryptXSecure
+Starting EncryptXSecure
+```
+use EncX\EncX\EncX;
+include 'class.EncryptXSecure.php';
+
+$enc = new EncXSec;
+```
+__Note :__ -Do Not Play Play With The Use Statement.
+           -Replace ['class.EncryptXSecure.php'] With The Location Of The File.
+                -_No Need To Change If The Class File Is In The Same Directory._
+
+Set A Salting Key:
+```
+$enc->setSaltKey($salt);
+```
+__Note :__ -Replace ['$salt'] with Your salt key
+                -_It Not Suggested To Share Your Salting Key With Anyone._
+
+Set A Security Level With Compromise To A Little Speed:
+```
+setSecLvl($lvl);
+```
+__Note :__ -Replace ['class.EncryptXSecure.php'] With The Location Of The File.
+                -_No Need To Call The Function If You Want The Perfect Combination Between Speed And Efficiency._
+
+Verify If A Value And A Hash Are The Same:
+```
+verify($inPass,$hash,$saltKey,$SecLevel);
+```
+__Note :__ -Replace ['$inPass'] With The Value, ['$hash'] With The Hash, ['$saltKey'] With The Salt and ['$SecLevel'] With The Security
+            Level.
+
 
 ## License
-This software is distributed under the [LGPL 2.1](http://www.gnu.org/licenses/lgpl-2.1.html) license, along with the [GPL Cooperation Commitment](https://gplcc.github.io/gplcc/). Please read LICENSE for information on the software availability and distribution.
+This software is distributed under the [LGPL 2.1](http://www.gnu.org/licenses/lgpl-2.1.html) license, along with the 
+[GPL Cooperation Commitment](https://gplcc.github.io/gplcc/). Please read LICENSE for information on the software availability and distribution.
