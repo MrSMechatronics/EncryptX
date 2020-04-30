@@ -6,7 +6,7 @@
  * @see https://github.com/MrSMechatronics/EncryptX
  *
  * @author Mr.S Mechatronics <mr.smechatronics@gmail.com>
- * @license   http://www.gnu.org/copyleft/lesser.html GNU Lesser General Public License
+ * @license   http://www.apache.org/licenses/ Apache License Version 2.0
  */
 namespace EncX;
 
@@ -82,7 +82,7 @@ class EncXQL extends EncXSec
                 }
         }
 
-        function createUser($table,$columnName,$){
+        function query($table,$columnName){
 
         }
 }
