@@ -22,35 +22,22 @@ We Need Filter Out The Information They Give Us At Every Step.
 ## How To Use EncryptXSecure
 Starting EncryptXSecure
 ```
-use EncX\EncX\EncX;
+use EncX\EncXSec;
 include 'class.EncryptXSecure.php';
 
-$enc = new EncXSec;
+$enc = new EncXSec($salt,$DevMode);
 ```
 __Note :__ -Do Not Play Play With The Use Statement.
            -Replace ['class.EncryptXSecure.php'] With The Location Of The File.
                 -_No Need To Change If The Class File Is In The Same Directory._
+           -Set $DevMode To False If Publishing.
 
-Set A Salting Key:
-```
-$enc->setSaltKey($salt);
-```
-__Note :__ -Replace ['$salt'] with Your salt key
-                -_It Not Suggested To Share Your Salting Key With Anyone._
 
-Set A Security Level With Compromise To A Little Speed:
+Check A Hash:
 ```
-setSecLvl($lvl);
+check($in,$InHash);
 ```
-__Note :__ -Replace ['class.EncryptXSecure.php'] With The Location Of The File.
-                -_No Need To Call The Function If You Want The Perfect Combination Between Speed And Efficiency._
-
-Verify If A Value And A Hash Are The Same:
-```
-verify($inPass,$hash,$saltKey,$SecLevel);
-```
-__Note :__ -Replace ['$inPass'] With The Value, ['$hash'] With The Hash, ['$saltKey'] With The Salt and ['$SecLevel'] With The Security
-            Level.
+__Note :__ -Replace ['$in'] With The Value And ['$InHash'] With The Hash.
 
 
 ## License
